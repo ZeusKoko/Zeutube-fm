@@ -1,7 +1,8 @@
 'use client';
 
 import { APP_CONFIG } from '@/lib/config';
-import type { PlatformFilter } from '@/lib/types';
+import type { Platform, PlatformFilter } from '@/lib/types';
+import { PlatformIcon } from './PlatformBadge';
 
 interface NavbarProps {
   activePlatform: PlatformFilter;
@@ -10,12 +11,25 @@ interface NavbarProps {
 }
 
 const PLATFORM_TABS: Array<{ id: PlatformFilter; label: string }> = [
-  { id: 'all', label: 'All' },
-  { id: 'youtube', label: 'YouTube' },
+  { id: 'all', label: 'All Platforms' },
   { id: 'twitch', label: 'Twitch' },
+  { id: 'youtube', label: 'YouTube' },
   { id: 'kick', label: 'Kick' },
   { id: 'tiktok', label: 'TikTok' },
 ];
+
+function getActiveIconColor(platform: Platform): string {
+  switch (platform) {
+    case 'twitch':
+      return 'text-[#9146FF]';
+    case 'youtube':
+      return 'text-[#FF3B3B]';
+    case 'kick':
+      return 'text-[#53FC18]';
+    case 'tiktok':
+      return 'text-[#FF2E93]';
+  }
+}
 
 export default function Navbar({
   activePlatform,
@@ -23,11 +37,11 @@ export default function Navbar({
   counts,
 }: NavbarProps) {
   return (
-    <header className="sticky top-0 z-30 border-b border-[#B7A9CC]/15 bg-[#0B0614]/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl flex-col sm:h-14 sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 px-4 py-2 sm:py-0 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-30 border-b border-[#FFF5FA]/10 bg-transparent backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl flex-col lg:h-16 lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-6 px-4 py-2.5 lg:py-0 sm:px-6 lg:px-8">
         <a
           href="#top"
-          className="font-display text-lg sm:text-xl font-extrabold tracking-tight whitespace-nowrap shrink-0 bg-gradient-to-r from-[#FF2E93] via-[#FF8A3D] to-[#7B2FF7] bg-clip-text text-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF2E93] rounded self-start sm:self-auto"
+          className="font-display text-lg sm:text-xl font-extrabold tracking-tight whitespace-nowrap shrink-0 bg-gradient-to-r from-[#FF2E93] via-[#FF8A3D] to-[#7B2FF7] bg-clip-text text-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF2E93] rounded self-start lg:self-auto"
         >
           {APP_CONFIG.APP_NAME}
         </a>
@@ -35,7 +49,7 @@ export default function Navbar({
         <nav
           aria-label="Platform filters"
           role="tablist"
-          className="flex w-full sm:w-auto items-center justify-between sm:justify-end gap-1 sm:gap-1.5 overflow-x-auto no-scrollbar"
+          className="flex w-full lg:w-auto items-center gap-2 overflow-x-auto no-scrollbar py-0.5"
         >
           {PLATFORM_TABS.map((tab) => {
             const isActive = activePlatform === tab.id;
@@ -47,22 +61,30 @@ export default function Navbar({
                 role="tab"
                 aria-selected={isActive}
                 onClick={() => onSelectPlatform(tab.id)}
-                className={`min-h-[40px] sm:min-h-[38px] px-2.5 sm:px-3.5 rounded-lg text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00E5C7] ${
+                className={`min-h-[42px] inline-flex items-center gap-2 rounded-full border px-3.5 sm:px-4 py-1.5 text-xs sm:text-sm font-semibold whitespace-nowrap shrink-0 transition-[background-color,border-color,box-shadow,color] duration-150 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00E5C7] ${
                   isActive
-                    ? 'bg-gradient-to-r from-[#FF2E93] via-[#FF8A3D] to-[#7B2FF7] text-[#FFF5FA] shadow-[0_0_16px_-3px_rgba(255,46,147,0.5)]'
-                    : 'text-[#B7A9CC] hover:text-[#FFF5FA] hover:bg-[#170B2A]'
+                    ? 'border-[#FF2E93] bg-[#2D0F33]/85 text-[#FFF5FA] shadow-[0_0_20px_-3px_rgba(255,46,147,0.5)]'
+                    : 'border-[#B7A9CC]/20 bg-[#170B2A]/55 text-[#D4C7E5] hover:border-[#B7A9CC]/40 hover:bg-[#21113B]/75 hover:text-[#FFF5FA]'
                 }`}
               >
-                <span>{tab.label}</span>
-                {typeof count === 'number' && count > 0 && (
-                  <span
-                    className={`hidden sm:inline ml-1.5 tabular-nums text-[11px] ${
-                      isActive ? 'text-[#FFF5FA]/90' : 'text-[#B7A9CC]/70'
+                {tab.id !== 'all' && (
+                  <PlatformIcon
+                    platform={tab.id}
+                    className={`h-4 w-4 shrink-0 ${
+                      isActive ? getActiveIconColor(tab.id) : 'text-[#B7A9CC]'
                     }`}
-                  >
-                    {count}
-                  </span>
+                  />
                 )}
+                <span>{tab.label}</span>
+                <span
+                  className={`inline-flex h-5 min-w-[22px] items-center justify-center rounded-full px-1.5 text-[11px] font-bold tabular-nums transition-colors ${
+                    isActive
+                      ? 'bg-[#FF2E93] text-[#FFF5FA]'
+                      : 'bg-[#0B0614]/85 text-[#B7A9CC]'
+                  }`}
+                >
+                  {typeof count === 'number' ? count : 0}
+                </span>
               </button>
             );
           })}

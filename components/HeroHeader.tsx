@@ -26,7 +26,7 @@ export default function HeroHeader({
   return (
     <section
       id="top"
-      className="relative overflow-hidden border-b border-[#B7A9CC]/15 bg-[#0B0614]"
+      className="relative -mt-[104px] pt-[104px] lg:-mt-16 lg:pt-16 overflow-hidden border-b border-[#B7A9CC]/15 bg-[#0B0614]"
     >
       {/* Atmospheric Vice sunset backdrop */}
       <div className="absolute inset-0 pointer-events-none select-none">
@@ -37,13 +37,13 @@ export default function HeroHeader({
           priority
           sizes="100vw"
           referrerPolicy="no-referrer"
-          className="object-cover object-center opacity-30"
+          className="object-cover object-center opacity-35"
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(180deg, rgba(11,6,20,0.65) 0%, rgba(11,6,20,0.82) 55%, #0B0614 100%)',
+              'linear-gradient(180deg, rgba(11,6,20,0.45) 0%, rgba(11,6,20,0.78) 55%, #0B0614 100%)',
           }}
         />
       </div>

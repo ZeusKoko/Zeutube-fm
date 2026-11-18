@@ -1,22 +1,22 @@
-import { Play, Radio, Smartphone, Tv } from 'lucide-react';
+import { Music2, Twitch, Youtube, Zap } from 'lucide-react';
 import type { Platform } from '@/lib/types';
 
 export function PlatformIcon({
   platform,
-  className = 'w-3.5 h-3.5',
+  className = 'w-4 h-4',
 }: {
   platform: Platform;
   className?: string;
 }) {
   switch (platform) {
     case 'youtube':
-      return <Play className={className} aria-hidden="true" />;
+      return <Youtube className={className} aria-hidden="true" />;
     case 'twitch':
-      return <Tv className={className} aria-hidden="true" />;
+      return <Twitch className={className} aria-hidden="true" />;
     case 'kick':
-      return <Radio className={className} aria-hidden="true" />;
+      return <Zap className={className} aria-hidden="true" />;
     case 'tiktok':
-      return <Smartphone className={className} aria-hidden="true" />;
+      return <Music2 className={className} aria-hidden="true" />;
   }
 }
 
