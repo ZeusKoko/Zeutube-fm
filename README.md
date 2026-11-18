@@ -1,17 +1,44 @@
 <div align="center">
 
-<img src="public/images/hero_leonida_sunset.jpg" alt="Zeutube fm — Tropical Vice Coast Sunset Banner" width="100%" />
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWk2eHNsOXUzcnJmbWpnYjNyZXd5ZzRtZDhrYnZ3dGRqamxrazhieCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ADZHmZIWCxMo9Rajar/giphy.gif" alt="Zeutube fm — Vice Coast GTA VI Vibe" width="760" />
 
-# ZEUTUBE FM
+<br />
+
+# 🌴 ZEUTUBE FM
 
 **Vice Coast Live Streamer Directory for Grand Theft Auto VI**
 
-*Find who is live right now across YouTube, Twitch, Kick, and TikTok — zero login, instant filtering, built for mobile.*
+*See who is live across YouTube, Twitch, Kick, and TikTok right now — zero login, instant platform switching, built for fast mobile data.*
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-0B0614?style=for-the-badge&logo=nextdotjs&logoColor=FF2E93)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-0B0614?style=for-the-badge&logo=typescript&logoColor=FF8A3D)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-0B0614?style=for-the-badge&logo=tailwindcss&logoColor=00E5C7)](https://tailwindcss.com/)
-[![Netlify Functions](https://img.shields.io/badge/Netlify-Functions-0B0614?style=for-the-badge&logo=netlify&logoColor=FFD23F)](https://www.netlify.com/)
+<br />
+
+<!-- Streaming Platforms & Live Capabilities -->
+<p>
+  <a href="#platform--api-architecture"><img src="https://img.shields.io/badge/LIVE-DIRECTORY-FF3B3B?style=for-the-badge&logo=livejournal&logoColor=FFF5FA&labelColor=170B2A" alt="Live Directory" /></a>
+  <a href="#platform--api-architecture"><img src="https://img.shields.io/badge/YouTube-Live_Streams-FF2E93?style=for-the-badge&logo=youtube&logoColor=FF3B3B&labelColor=170B2A" alt="YouTube" /></a>
+  <a href="#platform--api-architecture"><img src="https://img.shields.io/badge/Twitch-Helix_API-7B2FF7?style=for-the-badge&logo=twitch&logoColor=D4B8FF&labelColor=170B2A" alt="Twitch" /></a>
+  <a href="#platform--api-architecture"><img src="https://img.shields.io/badge/Kick-Public_API-00E5C7?style=for-the-badge&logo=kick&logoColor=00E5C7&labelColor=170B2A" alt="Kick" /></a>
+  <a href="#platform--api-architecture"><img src="https://img.shields.io/badge/TikTok-Creators-FF8A3D?style=for-the-badge&logo=tiktok&logoColor=FF2E93&labelColor=170B2A" alt="TikTok" /></a>
+</p>
+
+<!-- Tech Stack, Edge Cache & Spotlight -->
+<p>
+  <img src="https://img.shields.io/badge/Next.js-15-FF2E93?style=flat-square&logo=nextdotjs&logoColor=FFF5FA&labelColor=170B2A" alt="Next.js 15" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-FF8A3D?style=flat-square&logo=typescript&logoColor=FF8A3D&labelColor=170B2A" alt="TypeScript 5.9" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-v4-00E5C7?style=flat-square&logo=tailwindcss&logoColor=00E5C7&labelColor=170B2A" alt="Tailwind CSS v4" />
+  <img src="https://img.shields.io/badge/Netlify-Functions-FFD23F?style=flat-square&logo=netlify&logoColor=FFD23F&labelColor=170B2A" alt="Netlify Functions" />
+  <img src="https://img.shields.io/badge/Edge_Cache-60s_TTL-7B2FF7?style=flat-square&logo=cloudflare&logoColor=D4B8FF&labelColor=170B2A" alt="60s Edge Cache" />
+  <img src="https://img.shields.io/badge/🇰🇪_Kenya-Spotlight-00E5C7?style=flat-square&labelColor=170B2A" alt="Kenyan Streamers Spotlight" />
+</p>
+
+<p>
+  <a href="#key-features"><strong>Features</strong></a> ·
+  <a href="#platform--api-architecture"><strong>Architecture</strong></a> ·
+  <a href="#vice-sunset-palette"><strong>Palette</strong></a> ·
+  <a href="#quick-customization"><strong>Customize</strong></a> ·
+  <a href="#local-development"><strong>Local Setup</strong></a> ·
+  <a href="#deploying-to-netlify"><strong>Deploy to Netlify</strong></a>
+</p>
 
 </div>
 
@@ -27,20 +54,49 @@ No sign-in walls. No bloated player embeds. Open the page, scan the Vice sunset 
 
 ## Key Features
 
-- **Instant Platform Tabs** — Switch between `All`, `YouTube`, `Twitch`, `Kick`, and `TikTok` with zero page reloads or network refetches (last response cached in memory).
-- **Multi-Platform Unified Cards** — Simulcasting creators appear on **one card** with a dedicated watch button for each active platform.
-- **Featured Live Row** — Highlights flagship creators (`Kai Cenat`, `IShowSpeed`, `VanossGaming`, `Adin Ross`, `The Cowboys`, and anyone marked `featured: true`).
-- **Kenyan Streamers Spotlight** — Dedicated `🇰🇪 KE` section surfacing Kenyan creators live on the Vice Coast.
-- **Smart Sorting & Live Search** — Sort by **Most viewers** (default) or **Newest live**, and filter by streamer name in real time.
-- **Quiet 60-Second Refresh** — Updates live counts and `"Updated just now"` timestamps silently in the background without flickering.
-- **Offline Curated Roster** — Muted `"Not live right now"` section with direct channel links so fans can still find their favorite creators.
-- **Built for Fast Mobile Data** — Skeleton loading cards, lazy-loaded 16:9 thumbnails with explicit dimensions, zero heavy UI libraries, and full support down to `360px` screens.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚡ Instant Platform Filtering</h3>
+      <p>Switch seamlessly between <code>All</code>, <code>YouTube</code>, <code>Twitch</code>, <code>Kick</code>, and <code>TikTok</code> with zero page reloads or redundant fetches — the latest response stays cached in memory.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🎛️ Unified Multi-Platform Cards</h3>
+      <p>Simulcasting creators like <strong>Kai Cenat</strong> or <strong>IShowSpeed</strong> appear on <strong>one clean card</strong> with a dedicated watch button for each active live platform.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔥 Featured & 🇰🇪 Kenyan Spotlights</h3>
+      <p>Promotes flagship creators in the <strong>Featured Live</strong> row at the top, plus a dedicated <strong>Kenyan Streamers</strong> section highlighted with a <code>🇰🇪 KE</code> badge.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📱 Built for 360px & Fast Data</h3>
+      <p>Immediate skeleton cards, lazy-loaded 16:9 thumbnails with fixed aspect dimensions, zero heavy UI libraries, and quiet 60-second background refreshes.</p>
+    </td>
+  </tr>
+</table>
+
+- **Live Search & Smart Sorting** — Filter by streamer name in real time and sort by **Most viewers** (default) or **Newest live**.
+- **Offline Curated Roster** — Muted `"Not live right now"` section at the bottom with direct channel links.
+- **Automatic Demo Mode** — Runs out of the box with realistic demo broadcasts and a subtle `Demo data` indicator whenever API keys are omitted.
 
 ---
 
 ## Platform & API Architecture
 
-All third-party API calls execute strictly on the server inside `lib/live-aggregator.ts`, exposed via both `app/api/live/route.ts` (Next.js) and `netlify/functions/live.ts` (Netlify Functions).
+All third-party API calls execute strictly on the server inside [`lib/live-aggregator.ts`](lib/live-aggregator.ts), exposed through both [`app/api/live/route.ts`](app/api/live/route.ts) (Next.js) and [`netlify/functions/live.ts`](netlify/functions/live.ts) (Netlify Functions).
+
+```mermaid
+flowchart LR
+    Visitor["📱 Visitor Browser\n(60s Silent Refresh + Memory Cache)"] --> CDN["⚡ Netlify Edge CDN\n(s-maxage=60)"]
+    CDN --> Aggregator["🧠 /api/live Aggregator\n(lib/live-aggregator.ts)"]
+    Aggregator --> Twitch["Twitch Helix API\n(Category + Curated Logins)"]
+    Aggregator --> YouTube["YouTube Data API v3\n(Uploads Playlist + 10m Search Cache)"]
+    Aggregator --> Kick["Kick Public API\n(Graceful Fallback Links)"]
+    Aggregator --> TikTok["Curated TikTok Roster\n(Profile Pass-Through)"]
+    Aggregator -. "No API Keys Configured" .-> Demo["🌴 Demo Mode Payload"]
+```
 
 | Platform | Integration Strategy | Caching & Resilience |
 | :--- | :--- | :--- |
@@ -56,16 +112,16 @@ All third-party API calls execute strictly on the server inside `lib/live-aggreg
 
 Designed around a dark tropical neon dusk mood — high contrast, crisp tabular numerals, and `prefers-reduced-motion` support:
 
-| Token | Hex | Usage |
-| :--- | :--- | :--- |
-| **Midnight Base** | `#0B0614` | Primary canvas background |
-| **Velvet Card** | `#170B2A` | Streamer card & toolbar surfaces |
-| **Neon Pink** | `#FF2E93` | Gradient start, active focus & TikTok accents |
-| **Sunset Orange** | `#FF8A3D` | Gradient mid-stop & featured accents |
-| **Golden Yellow** | `#FFD23F` | Headline highlights & demo mode indicator |
-| **Electric Purple** | `#7B2FF7` | Gradient end & Twitch accents |
-| **Tropical Teal** | `#00E5C7` | Kenyan Streamers spotlight & Kick accents |
-| **Live Crimson** | `#FF3B3B` | Pulsing `LIVE` status badge |
+| Swatch | Token | Hex | Usage |
+| :---: | :--- | :--- | :--- |
+| ![#0B0614](https://img.shields.io/badge/%20-0B0614-0B0614?style=flat-square) | **Midnight Base** | `#0B0614` | Primary canvas background |
+| ![#170B2A](https://img.shields.io/badge/%20-170B2A-170B2A?style=flat-square) | **Velvet Card** | `#170B2A` | Streamer card & toolbar surfaces |
+| ![#FF2E93](https://img.shields.io/badge/%20-FF2E93-FF2E93?style=flat-square) | **Neon Pink** | `#FF2E93` | Gradient start, active focus & TikTok accents |
+| ![#FF8A3D](https://img.shields.io/badge/%20-FF8A3D-FF8A3D?style=flat-square) | **Sunset Orange** | `#FF8A3D` | Gradient mid-stop & featured accents |
+| ![#FFD23F](https://img.shields.io/badge/%20-FFD23F-FFD23F?style=flat-square) | **Golden Yellow** | `#FFD23F` | Headline highlights & demo mode indicator |
+| ![#7B2FF7](https://img.shields.io/badge/%20-7B2FF7-7B2FF7?style=flat-square) | **Electric Purple** | `#7B2FF7` | Gradient end & Twitch accents |
+| ![#00E5C7](https://img.shields.io/badge/%20-00E5C7-00E5C7?style=flat-square) | **Tropical Teal** | `#00E5C7` | Kenyan Streamers spotlight & Kick accents |
+| ![#FF3B3B](https://img.shields.io/badge/%20-FF3B3B-FF3B3B?style=flat-square) | **Live Crimson** | `#FF3B3B` | Pulsing `LIVE` status badge |
 
 ---
 
