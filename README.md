@@ -1,4 +1,4 @@
-# Leonida Live
+# Zeutube fm
 
 A fast, mobile-first live directory of streamers and celebrities playing Grand Theft Auto VI across **YouTube**, **Twitch**, **Kick**, and **TikTok** — built with Next.js App Router and Netlify Functions.
 

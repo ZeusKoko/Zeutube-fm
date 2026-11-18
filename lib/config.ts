@@ -3,7 +3,7 @@
  * Change APP_NAME here to rebrand the entire site in one place.
  */
 export const APP_CONFIG = {
-  APP_NAME: 'Leonida Live',
+  APP_NAME: 'Zeutube fm',
   APP_SHORT_DESCRIPTION:
     'Live directory of streamers and celebrities playing Grand Theft Auto VI right now across YouTube, Twitch, Kick, and TikTok.',
   TARGET_GAME_TITLE: 'Grand Theft Auto VI',
