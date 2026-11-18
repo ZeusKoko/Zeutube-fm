@@ -1,0 +1,123 @@
+[
+  {
+    "id": "kai-cenat",
+    "displayName": "Kai Cenat",
+    "avatarUrl": "",
+    "featured": true,
+    "country": "US",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "kaicenat",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "kaicenat"
+  },
+  {
+    "id": "ishowspeed",
+    "displayName": "IShowSpeed",
+    "avatarUrl": "",
+    "featured": true,
+    "country": "US",
+    "youtubeChannelId": "UCWsDFcIhY2DBi3GB5uykGFw",
+    "twitchLogin": "ishowspeed",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "ishowspeed"
+  },
+  {
+    "id": "vanossgaming",
+    "displayName": "VanossGaming",
+    "avatarUrl": "",
+    "featured": true,
+    "country": "CA",
+    "youtubeChannelId": "UCKqH_9mk1waLgBiL2vT5b9g",
+    "twitchLogin": "TODO_TWITCH_LOGIN",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "TODO_TIKTOK_USERNAME"
+  },
+  {
+    "id": "adin-ross",
+    "displayName": "Adin Ross",
+    "avatarUrl": "",
+    "featured": true,
+    "country": "US",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "TODO_TWITCH_LOGIN",
+    "kickSlug": "adinross",
+    "tiktokUsername": "TODO_TIKTOK_USERNAME"
+  },
+  {
+    "id": "the-cowboys",
+    "displayName": "The Cowboys",
+    "avatarUrl": "",
+    "featured": true,
+    "country": "US",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "TODO_TWITCH_LOGIN",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "TODO_TIKTOK_USERNAME"
+  },
+  {
+    "id": "marlon",
+    "displayName": "Marlon",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "SE",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "marlon",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "marlon"
+  },
+  {
+    "id": "stable-ronaldo",
+    "displayName": "Stable Ronaldo",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "US",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "stableronaldo",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "stableronaldo"
+  },
+  {
+    "id": "chebet-plays",
+    "displayName": "Chebet Plays",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "KE",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "chebetplays",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "chebetplays"
+  },
+  {
+    "id": "nairobi-night",
+    "displayName": "Nairobi Night",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "KE",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "nairobinight",
+    "kickSlug": "nairobinight",
+    "tiktokUsername": "nairobinight"
+  },
+  {
+    "id": "kiprop-live",
+    "displayName": "Kiprop Live",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "KE",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "TODO_TWITCH_LOGIN",
+    "kickSlug": "kiproplive",
+    "tiktokUsername": "kiproplive"
+  },
+  {
+    "id": "mombasa-drift",
+    "displayName": "Mombasa Drift",
+    "avatarUrl": "",
+    "featured": false,
+    "country": "KE",
+    "youtubeChannelId": "TODO_YOUTUBE_CHANNEL_ID",
+    "twitchLogin": "mombasadrift",
+    "kickSlug": "TODO_KICK_SLUG",
+    "tiktokUsername": "TODO_TIKTOK_USERNAME"
+  }
+]

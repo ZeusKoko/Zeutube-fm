@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-bg-base: #0B0614;
+  --color-bg-card: #170B2A;
+  --color-neon-pink: #FF2E93;
+  --color-sunset-orange: #FF8A3D;
+  --color-golden-yellow: #FFD23F;
+  --color-electric-purple: #7B2FF7;
+  --color-teal-accent: #00E5C7;
+  --color-text-main: #FFF5FA;
+  --color-text-muted: #B7A9CC;
+  --color-live-red: #FF3B3B;
+}
+
+@layer base {
+  html {
+    background-color: #0B0614;
+    color: #FFF5FA;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0B0614;
+    color: #FFF5FA;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes leonida-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.92);
+  }
+}
+
+.live-dot-pulse {
+  animation: leonida-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-dot-pulse {
+    animation: none;
+  }
+}
